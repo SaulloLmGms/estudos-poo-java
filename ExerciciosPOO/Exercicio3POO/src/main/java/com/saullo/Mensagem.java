@@ -1,4 +1,5 @@
-package Exercicio3POO.src;
+package com.saullo;
+
 abstract class Mensagem {
 
     private String texto;
@@ -15,7 +16,6 @@ abstract class Mensagem {
         return this.emailRemetente;
     }
 
-
     public void setTexto(String texto) {
         this.texto = texto;
     }
@@ -24,11 +24,11 @@ abstract class Mensagem {
         this.emailRemetente = emailRemetente;
     }
 
-    public boolean ehAnonima(){
+    public boolean ehAnonima() {
         return this.anonima;
     }
 
-    public Mensagem(String texto, String emailRemetente, boolean anonima){
+    public Mensagem(String texto, String emailRemetente, boolean anonima) {
         this.texto = texto;
         this.emailRemetente = emailRemetente;
         this.anonima = anonima;

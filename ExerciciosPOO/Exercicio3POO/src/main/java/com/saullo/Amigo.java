@@ -1,4 +1,4 @@
-package Exercicio3POO.src;
+package com.saullo;
 
 public class Amigo {
 
@@ -29,6 +29,5 @@ public class Amigo {
     public void setAmigoSorteado(String emailAmigoSorteado) {
         this.emailAmigoSorteado = emailAmigoSorteado;
     }
-
 
 }
