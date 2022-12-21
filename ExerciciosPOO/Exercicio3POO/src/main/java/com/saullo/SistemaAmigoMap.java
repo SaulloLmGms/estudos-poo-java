@@ -7,6 +7,8 @@ import java.util.Optional;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class SistemaAmigoMap {
 
@@ -22,7 +24,8 @@ public class SistemaAmigoMap {
     }
 
     public List<Mensagem> pesquisaMensagensAnonimas() {
-        List<Mensagem> mensagensAnonimas = mensagens.stream().filter(msg -> msg.ehAnonima()).toList();
+        List<Mensagem> mensagensAnonimas = mensagens.stream().filter(msg -> msg.ehAnonima())
+                .collect(Collectors.toList());
         return mensagensAnonimas;
     }
 

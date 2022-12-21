@@ -17,6 +17,8 @@ public class SistemaAmigoMapTest {
 
   @Test
   public void testPesquisarMensagens() {
+    assertTrue(sistema.getAmigos().size() == 0);
+    assertEquals(0, sistema.getAmigos().size());
     assertTrue(sistema.pesquisaTodasAsMensagens().isEmpty());
     assertThrows(AmigoInexistenteException.class,
         () -> sistema.pesquisaAmigoSecretoDe("saullo@teste.com"));
